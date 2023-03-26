@@ -1,0 +1,177 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* PRIMARY */
+    --red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+
+    /* NEUTRAL */
+    --Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Light-Gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: var(--Light-Gray);
+}
+
+/* --------HEADER-------- */
+/* --------HEADER-------- */
+
+header {
+    padding: 85px 39px 76px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-weight: 275;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.166667px;
+    color: #4D4F62;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    letter-spacing: 0.166667px;
+    color: var(--Dark-Blue);
+}
+
+header p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.104167px;
+    color: var(--Grayish-Blue);
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    margin-top: 13px;
+    max-width: 540px;
+}
+
+
+/* ---------CARDS CONTAINER--------- */
+/* ---------CARDS CONTAINER--------- */
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0 32px 78px;
+    align-items: center;
+}
+
+/* ----PARTS---- */
+.part2 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+/* ---CARDS--- */
+.card {
+    background: #FFFFFF;
+    box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+    border-radius: 8px;
+    padding: 27px 28px 118px;
+    position: relative;
+    color: var(--Dark-Blue);
+    min-width: 311px;
+    max-width: 350px;
+}
+
+.supervisor {
+    border-top: 3.55px solid var(--Cyan);
+}
+
+.team {
+    border-top: 3.55px solid var(--red);
+}
+
+.karma {
+    border-top: 3.55px solid var(--Orange);
+}
+
+.calculator {
+    border-top: 3.55px solid var(--Blue);
+}
+
+.card h3 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.card p {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 0.0902778px;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+}
+
+/* ---ICONS--- */
+
+.card-icon {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 28px;
+}
+
+[alt="icon"] {
+    width: 54px;
+}
+
+@media (min-width:1024px) {
+    .container {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .part2 {
+        gap: 30px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container {
+        padding: 0;
+        padding-bottom: 80px;
+        gap: 30px;
+    }
+
+    header h1 {
+        font-weight: 275;
+        font-size: 36px;
+        line-height: 54px;
+        letter-spacing: 0.25px;
+    }
+
+    header h2 {
+        font-size: 36px;
+        line-height: 54px;
+        text-align: center;
+        letter-spacing: 0.25px;
+    }
+
+    [alt="icon"] {
+        width: 64px;
+    }
+
+}
